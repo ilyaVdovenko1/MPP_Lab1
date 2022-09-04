@@ -1,15 +1,9 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Tracer.Core.Domain;
 
 namespace Tracer.Core.Tests.UnitTests;
-
-public class TestClass
-{
-    
-}
 
 [TestClass]
 public class MethodMetadataTests
