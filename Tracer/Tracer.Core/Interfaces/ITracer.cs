@@ -1,4 +1,6 @@
-﻿namespace Tracer.Core.BLL.Interfaces;
+﻿using Tracer.Core.Domain;
+
+namespace Tracer.Core.Interfaces;
 
 public interface ITracer
 {
