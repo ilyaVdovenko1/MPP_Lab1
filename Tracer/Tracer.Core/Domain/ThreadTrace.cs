@@ -4,21 +4,21 @@ public class ThreadTrace
 {
     private readonly Stack<MethodTrace> _stackOfMethods;
 
-    private readonly List<MethodTrace> _allMethods;
-
     public ThreadTrace()
     {
         _stackOfMethods = new Stack<MethodTrace>();
-        _allMethods = new List<MethodTrace>();
+        Methods = new List<MethodTrace>();
     }
 
-    public long ElapsedTime => _allMethods.Select(item => item.Elapsed.Milliseconds).Sum();
+    public double ElapsedTime => Methods.Select(item => item.Elapsed.TotalMilliseconds).Sum();
+
+    public List<MethodTrace> Methods { get; }
 
     public void StartTrackMethod(MethodTrace methodTrace)
     {
         if (_stackOfMethods.Count == 0)
         {
-            _allMethods.Add(methodTrace);
+            Methods.Add(methodTrace);
         }
         else
         {
