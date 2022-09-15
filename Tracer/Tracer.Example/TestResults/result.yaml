@@ -1,0 +1,49 @@
+threadTraces:
+- threadId: 1
+  threadTrace:
+    elapsedTime: 23.9289
+    methods:
+    - methodMetadata:
+        className: <>c__DisplayClass0_0
+        methodName: <<Main>$>g__Inner|0
+      nestedMethods:
+      - methodMetadata:
+          className: TestClassOne
+          methodName: TestMethodOne
+        nestedMethods:
+        - methodMetadata:
+            className: TestClassOne
+            methodName: <TestMethodOne>g__TestMethodOneOne|2_0
+          nestedMethods: []
+          elapsed: 00:00:00.0040622
+        elapsed: 00:00:00.0200739
+      - methodMetadata:
+          className: TestClassOne
+          methodName: TestMethodTwo
+        nestedMethods: []
+        elapsed: 00:00:00.0001497
+      elapsed: 00:00:00.0239289
+- threadId: 6
+  threadTrace:
+    elapsedTime: 2.1519
+    methods:
+    - methodMetadata:
+        className: <>c__DisplayClass0_0
+        methodName: <<Main>$>b__2
+      nestedMethods:
+      - methodMetadata:
+          className: TestClassTwo
+          methodName: TestMethodOne
+        nestedMethods:
+        - methodMetadata:
+            className: TestClassTwo
+            methodName: <TestMethodOne>g__TestMethodOneOne|2_0
+          nestedMethods: []
+          elapsed: 00:00:00.0001359
+        elapsed: 00:00:00.0009160
+      - methodMetadata:
+          className: TestClassTwo
+          methodName: TestMethodTwo
+        nestedMethods: []
+        elapsed: 00:00:00.0001773
+      elapsed: 00:00:00.0021519
