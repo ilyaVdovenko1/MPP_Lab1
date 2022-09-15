@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Tracer.Core\Tracer.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Domain" />
+    </ItemGroup>
+
 </Project>
